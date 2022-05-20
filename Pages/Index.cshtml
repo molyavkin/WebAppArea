@@ -1,0 +1,18 @@
+﻿@page
+@model WebAppArea.Pages.IndexModel
+@{
+}
+<h3>Вычисление площади круга по радиусу и площади треугольника по трем сторонам</h3> 
+<br />
+<br />
+<h3>Площадь круга</h3>
+<p>Для вычисления площади круга введите его радиус</p>
+<form method ="post">
+    <input type="number" name="radius" />
+    <input type="submit" value="Ввод" />
+</form>
+<h3>@Model.Message</h3>
+<br />
+<div>
+   <a href="Triangle">Площадь треугольника</a>
+</div>

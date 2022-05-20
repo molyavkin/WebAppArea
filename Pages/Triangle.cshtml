@@ -1,0 +1,24 @@
+﻿@page
+@model WebAppArea.Pages.TriangleModel
+@{
+}
+<div>
+    <h3>Вычисление площади круга по радиусу и площади треугольника по трем сторонам</h3> 
+    <br />
+    <br />
+</div>
+<div>
+    <h3>Площадь треугольника</h3>
+    <p>Для вычисления площади треугольника введите длины его сторон</p>
+    <form method="post">
+        <input type="number" name="a" />
+        <input type="number" name="b" />
+        <input type="number" name="c" />
+        <input type="submit" value="Ввод" />
+    </form>
+    <h3>@Model.Message</h3>
+</div>
+<br />
+<div>
+   <a href="Index">Площадь круга</a>
+</div>
