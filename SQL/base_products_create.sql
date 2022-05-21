@@ -40,7 +40,8 @@ INSERT INTO according VALUES(3,3)
 INSERT INTO according VALUES(4,3)
 INSERT INTO according VALUES(5,1)
 
-use store
-select product_name, category_name from products
-left join according on products.id = according.product_id
-left join categories on categories.id = according.category_id;
+--test response
+USE store
+SELECT product_name, category_name FROM products
+LEFT JOIN according ON products.id = according.product_id
+LEFT JOIN categories ON categories.id = according.category_id;
